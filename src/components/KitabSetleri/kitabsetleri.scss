@@ -1,0 +1,128 @@
+#kitabset {
+  margin-top: 40px;
+  .liner {
+    border-bottom: 2px solid rgba(119, 119, 119, 0.17);
+    text-align: center;
+    h4 {
+      // margin-bottom: -3px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid transparent;
+      border-color: #fbbc34;
+      width: 30%;
+      margin: auto;
+    }
+  }
+  .books {
+    .bottom {
+      width: 100%;
+      .containerr {
+        width: 100%;
+        .box {
+          padding: 15px 10px;
+          transition: 0.3s ease-in-out;
+          cursor: pointer;
+          .text {
+            text-align: center;
+            .box1 {
+              display: block;
+              &.super {
+                font-family: "DM Sans", sans-serif;
+                font-size: 14px;
+                font-weight: 600;
+                transition: 0.3s ease-in-out;
+                margin-top: 10px;
+                &:hover {
+                  color: #ef4626;
+                }
+              }
+            }
+            .sebet {
+              background-color: #45a963;
+              color: white;
+              padding: 6px 10px;
+              line-height: 1.2;
+              font-size: 14px;
+              display: inline-block;
+            }
+          }
+          .image {
+            position: relative;
+            img {
+              width: 100%;
+              height: 300px;
+            }
+            .icons {
+              position: absolute;
+              top: 10%;
+              right: 0%;
+              .icon {
+                background-color: white;
+                padding: 10px;
+                margin-bottom: 9px;
+                border: 1px solid rgb(214, 213, 213);
+                opacity: 0;
+                visibility: hidden;
+                transform: translateX(30px);
+                transition: 0.3s ease-in-out;
+                color: black;
+                &:hover {
+                  background-color: #ef4626;
+                  color: white;
+                }
+              }
+            }
+          }
+          &:hover {
+            .image {
+              .icons {
+                .icon {
+                  opacity: 1;
+                  visibility: visible;
+                  transform: translateX(0px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      color: grey;
+      font-size: 12px;
+      // display: none;
+      background-color: rgb(197, 192, 192);
+      opacity: 0.7;
+      padding: 20px;
+      margin: 7px;
+      transition: 0.4;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

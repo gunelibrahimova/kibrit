@@ -1,0 +1,180 @@
+#yayinevi {
+  .yayinn {
+    padding: 0;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    background: #fff;
+    border: 1px solid #ddd;
+
+    .hafta {
+      cursor: default;
+      display: inline-block;
+      height: auto;
+      margin-left: -17px;
+      position: relative;
+      border: 0;
+      font-size: 100%;
+      margin: 0;
+      padding: 0;
+      color: #000;
+      font-family: Arial, Helvetica, sans-serif;
+
+      &::before {
+        border-bottom: 16px solid #6c0;
+        border-right: 10px solid rgba(255, 255, 255, 0);
+        border-top: 16px solid #6c0;
+        content: " ";
+        position: absolute;
+        right: -10px;
+        top: 0;
+      }
+
+      .text {
+        background-color: #6c0;
+        box-sizing: border-box;
+        color: #fff;
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        height: 32px;
+        line-height: 28px;
+        padding: 2px 14px;
+      }
+    }
+
+    .pub-image {
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      display: block;
+      height: 50px;
+      width: 50px;
+      cursor: pointer;
+      margin-left: 50px;
+    }
+
+    h5 {
+      padding-top: 10px;
+      padding-left: 20px;
+    }
+
+    .books {
+      .bottom {
+        width: 100%;
+
+        .containerr {
+          width: 100%;
+
+          .box {
+            padding: 15px 10px;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            overflow: hidden;
+            cursor: pointer;
+            width: 100%;
+
+            .image {
+              position: relative;
+
+              img {
+                height: auto;
+                max-width: 100%;
+              }
+
+              .icons {
+                position: absolute;
+                top: 30%;
+                right: 0%;
+
+                .icon {
+                  background-color: white;
+                  padding: 10px;
+                  margin-bottom: 9px;
+                  border: 1px solid rgb(214, 213, 213);
+                  opacity: 0;
+                  visibility: hidden;
+                  transform: translateX(28px);
+                  transition: 0.3s ease-in-out;
+                  color: black;
+
+                  &:hover {
+                    background-color: #ef4626;
+                    color: white;
+                  }
+                }
+              }
+            }
+
+            .text {
+              .box1 {
+                display: block;
+
+                &.super {
+                  font-family: "DM Sans", sans-serif;
+                  font-size: 14px;
+                  font-weight: 600;
+                  transition: 0.3s ease-in-out;
+                  margin-top: 10px;
+
+                  &:hover {
+                    color: #ef4626;
+                  }
+                }
+              }
+            }
+
+            &:hover {
+              .image {
+                .icons {
+                  .icon {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateX(0px);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .swiper-button-next:after,
+      .swiper-button-prev:after {
+        color: grey;
+        font-size: 12px;
+        // display: none;
+        background-color: rgb(197, 192, 192);
+        opacity: 0.7;
+        padding: 20px;
+        margin: 7px;
+        transition: 0.4;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,336 @@
+#cart {
+    
+    margin-bottom: 50px;
+    position: relative;
+    opacity: 0.6;
+    background-color: #FAE4E1;
+    .box {
+        padding-top: 100px;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 500px;
+        text-align: center;
+
+        .image {
+            width: 8%;
+            margin: auto;
+            
+
+            p {
+                color: #fbbc34;
+                font-size: 20px;
+                opacity: 1;
+                font-weight: bold;
+                margin-top: 20px;
+            }
+        }
+
+        .bottom {
+            width: 60%;
+            margin: auto;
+
+            h1 {
+                color: white;
+                font-size: 60px;
+            }
+
+            p {
+                margin-top: 40px;
+                color: white;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+#cartTotal {
+    padding-bottom: 30px;
+    .cardButton{
+        text-align: center;
+        width: 100%;
+        
+
+    }
+
+    .box {
+        table {
+            width: 100%;
+            margin-bottom: 1rem;
+            max-width: 100%;
+            background-color: transparent;
+
+            tr {
+                th {
+                    font-size: .6875rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    border: 0;
+                    vertical-align: bottom;
+                    padding: 0.75rem;
+                }
+
+                td {
+                    padding: 0.75rem;
+                    font-size: .875rem;
+                    border-color: #dee2e6;
+                    vertical-align: middle;
+                    padding-top: 1.25rem;
+                    padding-bottom: 1.25rem;
+                    border-left: 0;
+                    border-right: 0;
+                    border-bottom: 1px solid #dee2e6;
+                    border-top: 1px solid #dee2e6;
+                    text-align: left;
+
+                    &.incDecButton {
+                        button {
+                            margin: 5px;
+                            border: 1px solid black;
+                            background-color: transparent;
+                            padding: 5px;
+                        }
+                    }
+
+                    img {
+                        max-width: 3.75rem;
+                        height: auto;
+                        vertical-align: middle;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    .collaterals {
+        margin-left: 30px;
+        padding: 2.5rem;
+        border: 1px solid #dee2e6;
+
+        .cart_totals {
+            h2 {
+                font-family: "DM Sans", sans-serif;
+                font-size: 12px;
+                font-weight: 600;
+                text-transform: uppercase;
+                border-bottom: 1px solid #dee2e6;
+                padding-bottom: 1.25rem;
+                margin-bottom: 1.25rem;
+                line-height: 1.2;
+            }
+
+            table {
+                tbody {
+                    tr {
+                        th {
+                            font-size: .75rem;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            opacity: .5;
+                            padding-top: 0.625rem;
+                            padding-bottom: 0.625rem;
+                            vertical-align: middle;
+                        }
+
+                        td {
+                            font-size: 1rem;
+                            padding: 0.75rem;
+                            vertical-align: middle;
+                            padding-top: 1.25rem;
+                            padding-bottom: 1.25rem;
+                            border-left: 0;
+                            border-right: 0;
+                            text-align: left;
+                            padding-left: 100px;
+                        }
+                    }
+                }
+            }
+
+            .deneme {
+                margin-top: 20px;
+
+                .shop {
+                    padding-left: 3.5rem;
+                    padding-right: 3.5rem;
+                    padding-top: 13px;
+                    padding-bottom: 15px;
+                    background-color: #EF4626;
+                    color: white;
+                    font-size: 14px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        color: white;
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    .deneme {
+        margin-top: 70px;
+
+        .shop {
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+            padding-top: 13px;
+            padding-bottom: 15px;
+            border: 1px solid rgb(190, 190, 190);
+            color: grey;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                color: white;
+                background-color: #EF4626;
+            }
+        }
+    }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    #cartTotal {
+        padding-bottom: 0px;
+
+        .collaterals {
+            margin-left: 0px;
+            padding: 2rem;
+
+            .cart_totals {
+                .deneme {
+                    margin-top: 20px;
+
+                    .shop {
+                        padding-left: 4.5rem;
+                        padding-right: 5.5rem;
+                    }
+                }
+            }
+        }
+
+        .box {
+            table {
+                thead {
+                    tr {
+                        .product {
+                            display: none;
+                        }
+
+                    }
+                }
+
+                tbody {
+                    tr {
+                        .product {
+                            display: none;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media(min-width: 576px) and (max-width: 768px) {
+    #cartTotal {
+        padding-bottom: 0px;
+
+        .collaterals {
+            margin-left: 0px;
+            padding: 2rem;
+
+            .cart_totals {
+                .deneme {
+                    margin-top: 20px;
+
+                    .shop {
+                        padding-left: 15.5rem;
+                        padding-right: 15.5rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media(min-width: 768px) and (max-width: 992px) {
+    #cartTotal {
+        padding-bottom: 0px;
+
+        .collaterals {
+            margin-left: 0px;
+            padding: 2rem;
+
+            .cart_totals {
+                .deneme {
+                    margin-top: 20px;
+
+                    .shop {
+                        padding-left: 15.5rem;
+                        padding-right: 15.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    #cart {
+        .box {
+            padding-top: 0px;
+
+            .image {
+                width: 28%;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media(min-width: 576px) and (max-width: 768px) {
+    #cart {
+        .box {
+            padding-top: 0px;
+
+            .image {
+                width: 13%;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media(min-width: 768px) and (max-width: 992px) {
+    #cart {
+        .box {
+            padding-top: 0px;
+
+            .image {
+                width: 13%;
+            }
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {}

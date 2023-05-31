@@ -1,0 +1,118 @@
+#yazarlar {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .author {
+        padding: 0;
+        margin-bottom: 25px;
+        border-radius: 3px;
+        background: #fff;
+        border: 1px solid #ddd;
+
+        .top {
+            cursor: default;
+            display: inline-block;
+            height: auto;
+            margin-left: -17px;
+            position: relative;
+            border: 0;
+            font-size: 100%;
+            margin: 0;
+            padding: 0;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+
+            &::before {
+                border-bottom: 16px solid #66CC00;
+                border-right: 10px solid rgba(255, 255, 255, 0);
+                border-top: 16px solid #66CC00;
+                content: " ";
+                position: absolute;
+                right: -10px;
+                top: 0;
+            }
+
+            .text {
+                background-color: #66CC00;
+                box-sizing: border-box;
+                color: #fff;
+                display: block;
+                font-size: 14px;
+                font-weight: 700;
+                height: 32px;
+                line-height: 28px;
+                padding: 2px 14px;
+            }
+        }
+
+        .bottom {
+            .swiper-slide {
+              padding: 15px;
+            }
+          
+            .box {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 10px;
+              transition: 0.3s ease-in-out;
+              cursor: pointer;
+              width: 100%;
+              max-width: 300px; /* set a maximum width for each box */
+              margin: 0 auto; /* center the boxes horizontally */
+          
+              .image {
+                width: 100%;
+                position: relative;
+          
+                &::before {
+                  content: "";
+                  display: block;
+                  padding-top: 75%; /* set the aspect ratio of the image container */
+                }
+          
+                img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover; /* scale and crop the image to fit */
+                }
+              }
+          
+              p{
+                font-family: sans-serif;
+                text-align: center;
+                margin-top: 10px;
+                width: 100%; /* add this to ensure the text spans the width of the box */
+                box-sizing: border-box; /* include padding and border in the width calculation */
+                padding: 0 10px; /* add some left and right padding to the text */
+              }
+            }
+          }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    #yazarlar {
+        .author {
+            .bottom {
+                width: 100%;
+               
+            }
+        }
+    }
+    
+}
+
+// Medium devices (tablets, 768px and up)
+@media(min-width: 576px) and (max-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media(min-width: 768px) and (max-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {}

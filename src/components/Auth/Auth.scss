@@ -1,0 +1,104 @@
+#authPages{
+    background-color: #F2F2F2;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: auto;
+    background-image: url("https://cdn.pixabay.com/photo/2018/03/19/18/20/tea-time-3240766_960_720.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    .loginBox{
+        width: 400px;
+        margin: auto;
+        background-color: white;
+        .giris{
+            margin: auto;
+            width: 50%;
+        }
+        .inputBox{
+            padding-bottom: 10px;
+            &.marginBottom{
+                padding-bottom: 30px;
+            }
+            
+            input{
+                padding: 10px 70px;
+                border-radius: 5px;
+                outline: none;
+                background-color: #FAFAFA;
+                border: 1px solid rgb(211, 211, 211);
+            }
+            p{
+                font-size: 15px;
+                color: grey;
+            }
+        }
+        .buttonBox{
+            // text-align: center;
+            button{
+                padding: 10px 150px;
+                border: none;
+                background-color: #FBBC34;
+                color: white;
+                border-radius: 5px;
+            }
+        }
+        .buttonBoxx{
+            // text-align: center;
+            button{
+                padding: 10px 105px;
+                border: none;
+                background-color: #FBBC34;
+                color: white;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { 
+    #authPages{
+        .loginBox{
+            width: 90%;
+            margin: auto;
+            .inputBox{
+                
+                input{
+                    padding: 10px 50px;
+                }
+                p{
+                    font-size: 15px;
+                    color: grey;
+                }
+            }
+            .buttonBox{
+                // text-align: center;
+                button{
+                    padding: 10px 135px;
+                }
+            }
+            .buttonBoxx{
+                // text-align: center;
+                button{
+                    margin-top: 20px;
+                    padding: 10px 85px;
+                }
+            }
+        }
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {  }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {  }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (max-width: 1400px) {  }
