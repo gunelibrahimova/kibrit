@@ -50,9 +50,27 @@
     .cardButton{
         text-align: center;
         width: 100%;
-        
-
     }
+    .wpButton {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+        padding-top: 13px;
+        padding-bottom: 15px;
+        background-color: #EF4626;
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            color: white;
+            background-color: black;
+        }
+      }
 
     .box {
         table {
@@ -152,19 +170,20 @@
 
             .deneme {
                 margin-top: 20px;
+                text-align: center;
 
                 .shop {
-                    padding-left: 3.5rem;
-                    padding-right: 3.5rem;
-                    padding-top: 13px;
-                    padding-bottom: 15px;
+                    // padding-left: 2rem;
+                    // padding-right: 2rem;
+                    // padding-top: 13px;
+                    // padding-bottom: 15px;
                     background-color: #EF4626;
                     color: white;
-                    font-size: 14px;
-                    font-weight: 600;
+                    padding: 10px 20px;
+                    // font-size: 14px;
+                    // font-weight: 600;
                     cursor: pointer;
                     transition: 0.3s ease-in-out;
-
                     &:hover {
                         color: white;
                         background-color: black;
@@ -174,27 +193,27 @@
         }
     }
 
-    .deneme {
-        margin-top: 70px;
+    // .deneme {
+    //     margin-top: 70px;
 
-        .shop {
-            padding-left: 2.5rem;
-            padding-right: 2.5rem;
-            padding-top: 13px;
-            padding-bottom: 15px;
-            border: 1px solid rgb(190, 190, 190);
-            color: grey;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.3s ease-in-out;
+    //     .shop {
+    //         padding-left: 2.5rem;
+    //         padding-right: 2.5rem;
+    //         padding-top: 13px;
+    //         padding-bottom: 15px;
+    //         border: 1px solid rgb(190, 190, 190);
+    //         color: grey;
+    //         font-size: 14px;
+    //         font-weight: 600;
+    //         cursor: pointer;
+    //         transition: 0.3s ease-in-out;
 
-            &:hover {
-                color: white;
-                background-color: #EF4626;
-            }
-        }
-    }
+    //         &:hover {
+    //             color: white;
+    //             background-color: #EF4626;
+    //         }
+    //     }
+    // }
 }
 
 
@@ -211,10 +230,10 @@
                 .deneme {
                     margin-top: 20px;
 
-                    .shop {
-                        padding-left: 4.5rem;
-                        padding-right: 5.5rem;
-                    }
+                    // .shop {
+                    //     padding-left: 4.5rem;
+                    //     padding-right: 5.5rem;
+                    // }
                 }
             }
         }
@@ -256,10 +275,10 @@
                 .deneme {
                     margin-top: 20px;
 
-                    .shop {
-                        padding-left: 15.5rem;
-                        padding-right: 15.5rem;
-                    }
+                    // .shop {
+                    //     padding-left: 15.5rem;
+                    //     padding-right: 15.5rem;
+                    // }
                 }
             }
         }

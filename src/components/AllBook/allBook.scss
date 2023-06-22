@@ -1,4 +1,5 @@
 #allBook {
+    margin-top: 50px;
     input {
         font-size: 14px;
         color: #949494;
@@ -79,9 +80,8 @@
 
             .image {
                 position: relative;
-
                 img {
-                    height: auto;
+                    height: 250px;
                     max-width: 100%;
                 }
 

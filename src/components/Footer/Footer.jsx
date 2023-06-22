@@ -12,7 +12,7 @@ const Footer = () => {
     window.location.href = url;
   }
 
-  
+
   return (
     <div id="footer">
       <div className="container">
@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="bottom">
           <div className="box">
             <i class="fa-solid fa-mobile"></i>
-            <span onClick={callNumber} style={{cursor: "pointer"}}>Telefon : (050) 873 79 46</span>
+            <span onClick={callNumber} style={{ cursor: "pointer" }}>Telefon : (050) 873 79 46</span>
           </div>
           <div className="box">
             <i class="fa-brands fa-instagram"></i>
@@ -32,14 +32,14 @@ const Footer = () => {
             </a>
           </div>
           <div className="box">
-          <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-facebook"></i>
             <span>Facebook : </span>
             <a href="https://www.facebook.com/kibriittbook?mibextid=ZbWKwL" target="_blank">
               <span>Kibrit Book</span>
             </a>
           </div>
           <div className="box">
-          <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-tiktok"></i>
             <span>Tiktok : </span>
             <a href="https://www.tiktok.com/@kibritbook" target="_blank">
               <span>Kibrit Book </span>
@@ -50,18 +50,20 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <div className="foot">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-10">
+      <div class="foot">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-9 d-flex justify-content-start ">
               <h6>KİBRİTBOOKⒸ2023</h6>
             </div>
-            <div className="col-lg-2">
+            <div class="col-12 col-lg-3 d-flex justify-content-end">
               <img src={payments} alt="" />
             </div>
           </div>
         </div>
       </div>
+
+
     </div>
   )
 }

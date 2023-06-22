@@ -6,13 +6,9 @@ import Cards from 'react-credit-cards-2';
 import './cart.scss'
 import 'react-credit-cards-2/dist/es/styles-compiled.css';
 
-
-
 const Cart = () => {
 
     const { cart, totalQuantity, totalPrice } = useSelector((state) => state.cart)
-
-
     const dispatch = useDispatch();
 
     const [state, setState] = useState({
@@ -38,9 +34,13 @@ const Cart = () => {
         }, 2000);
     };
 
-
-
-
+    const phoneNumber = '0508737946'; 
+    const message = 'Merhaba!'; 
+  
+    const handleWhatsAppRedirect = () => {
+      const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    };
 
     return (
         <div>
@@ -54,12 +54,12 @@ const Cart = () => {
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>PICTURE</th>
-                                        <th>PRODUCT</th>
-                                        <th className="product">PRICE</th>
-                                        <th>QUANTITY</th>
-                                        <th className="product">SUBTOTAL</th>
-                                        <th>REMOVE</th>
+                                        <th>Şəkil</th>
+                                        <th>Məhsulun adı</th>
+                                        <th className="product">Qiyməti</th>
+                                        <th>Sayı</th>
+                                        <th className="product">Ümumi məbləğ</th>
+                                        <th>Sil</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -109,21 +109,21 @@ const Cart = () => {
                         <div className="col-lg-4 mb-3">
                             <div className="collaterals">
                                 <div className="cart_totals">
-                                    <h2>Cart totals</h2>
+                                    <h2>ÜMUMI MƏBLƏĞ</h2>
                                     <table>
                                         <tbody>
                                             <tr>
-                                                <th>Total Quantity</th>
+                                                <th>Toplam say</th>
                                                 <td>{totalQuantity && totalQuantity < 0 ? 0 : totalQuantity}</td>
                                             </tr>
                                             <tr>
-                                                <th>Total</th>
+                                                <th>Qiymət</th>
                                                 <td style={{ fontWeight: "700" }}>£{totalPrice && totalPrice < 0 ? 0 : totalPrice}</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                     <div className="deneme">
-                                        <span className='shop' onClick={() => setShowCardDetails(true)}>Proceed to checkout</span>
+                                        <span className='shop' onClick={() => setShowCardDetails(true)}>Sifarişi tamamla</span>
                                     </div>
 
                                 </div>
@@ -131,12 +131,15 @@ const Cart = () => {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className='mt-4'>
                     {showCardDetails && (
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-8">
-                                    <h4 style={{textAlign : "center"}}>Sifarişinizi tamamlamaq üçün zəhmət olmasa sağdaki kart hesabına <br/> {totalPrice /2}AZN ilkin ödəniş edib, çeki aşağıda açılan whatsapp <br/> adresimizə göndərin🌻</h4>
+                                    <h4 className='mb-4' style={{textAlign : "center"}}>Sifarişinizi tamamlamaq üçün zəhmət olmasa sağdaki kart hesabına <br/> {totalPrice /2}AZN ilkin ödəniş edib, çeki aşağıda açılan whatsapp <br/> adresimizə göndərin🌻</h4>
+                                    <button className='wpButton' onClick={handleWhatsAppRedirect}>(050) 873 79 46</button>
+
+
                                 </div>
                                 <div className="col-lg-4">
                                     <div className="mb-4">
